@@ -1,0 +1,80 @@
+{
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "vscode-icons",
+    "python.languageServer": "Pylance",
+    "explorer.confirmDelete": false,
+    "redhat.telemetry.enabled": false,
+    "files.autoSave": "onFocusChange",
+ 
+    // PYTHON
+    "python.formatting.provider": "black",
+    "python.linting.pylintArgs": [
+            "--load-plugins", "pylint_django",
+            "--disable=django-not-configured",
+            "--django-settings-module=config.settings",
+            "--logging-format-style=fstr"],
+    "python.sortImports.args": [
+        "--trailing-comma",
+        "--use-parentheses",
+        "--force-single-line-imports",
+        "--line-length=88",
+        "--multi-line=3",
+        "--force-grid-wrap=0",
+        "--lines-after-imports=2",
+        "--skip-glob=**/migrations/*",
+        "--extend-skip-glob=**/env/*"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.analysis.extraPaths": [
+        "./env",
+        "./env/"
+    ],
+    "python.analysis.completeFunctionParens": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+
+    
+    // FRONTEND
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript",
+        "vue"
+    ],
+    "vetur.validation.template": false,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+      
+
+    // gitlens
+    "gitlens.advanced.blame.customArguments": [
+        "--ignore-revs-file",
+        ".git-blame-ignore-revs" 
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmDragAndDrop": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.confirmSync": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "git.autofetch": true,
+    "settingsSync.ignoredExtensions": [
+    
+    ]
+}
